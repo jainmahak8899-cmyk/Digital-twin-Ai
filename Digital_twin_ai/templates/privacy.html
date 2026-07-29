@@ -1,0 +1,402 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+
+<style>
+
+body{
+    background:#f5f7fb;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    padding:80px 0;
+    border-radius:0 0 40px 40px;
+    margin-bottom:60px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+top:-120px;
+right:-100px;
+
+}
+
+.hero::after{
+
+content:"";
+position:absolute;
+width:250px;
+height:250px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+bottom:-120px;
+left:-80px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+font-weight:700;
+
+}
+
+.hero p{
+
+font-size:20px;
+opacity:.9;
+
+}
+
+.last-updated{
+
+display:inline-block;
+background:rgba(255,255,255,.15);
+padding:10px 22px;
+border-radius:50px;
+margin-top:20px;
+font-size:15px;
+
+}
+
+/* Card */
+
+.policy-card{
+
+background:white;
+border:none;
+border-radius:25px;
+box-shadow:0 20px 40px rgba(0,0,0,.08);
+padding:40px;
+
+}
+
+/* Section */
+
+.section{
+
+margin-bottom:45px;
+
+}
+
+.section h3{
+
+font-size:26px;
+font-weight:700;
+color:#667eea;
+margin-bottom:20px;
+
+}
+
+.section p{
+
+color:#666;
+line-height:1.9;
+
+}
+
+.section ul{
+
+padding-left:20px;
+
+}
+
+.section li{
+
+margin-bottom:12px;
+color:#555;
+line-height:1.8;
+
+}
+
+/* Info Boxes */
+
+.info-box{
+
+background:#f8f9ff;
+border-left:5px solid #667eea;
+padding:22px;
+border-radius:15px;
+margin-top:20px;
+
+}
+
+.info-box i{
+
+color:#667eea;
+font-size:26px;
+margin-bottom:15px;
+
+}
+
+.info-box h5{
+
+font-weight:600;
+
+}
+
+.info-box p{
+
+margin:0;
+color:#666;
+
+}
+
+/* Contact */
+
+.contact-box{
+
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+margin-top:50px;
+
+}
+
+.contact-box a{
+
+display:inline-block;
+margin-top:20px;
+background:white;
+color:#667eea;
+padding:12px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+.contact-box a:hover{
+
+transform:translateY(-3px);
+
+}
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+<div class="container text-center">
+
+<h1>
+Privacy Policy
+</h1>
+
+<p>
+
+Your privacy matters. Learn how Digital Twin AI protects and manages your information.
+
+</p>
+
+<div class="last-updated">
+
+<i class="fas fa-calendar-alt"></i>
+
+Last Updated • July 2026
+
+</div>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="policy-card">
+
+<div class="section">
+
+<h3>
+
+<i class="fas fa-shield-alt me-2"></i>
+
+Our Commitment
+
+</h3>
+
+<p>
+
+Digital Twin AI values your trust. We are committed to protecting your personal information and ensuring transparency in how your data is collected, stored, and used. Every feature of our platform is designed with privacy and security as a priority.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h3>
+
+<i class="fas fa-database me-2"></i>
+
+Information We Collect
+
+</h3>
+
+<ul>
+
+<li>Account details such as your username and email address.</li>
+
+<li>Study, financial, fitness and productivity information voluntarily provided by you.</li>
+
+<li>AI interaction history to personalize recommendations.</li>
+
+<li>Basic technical information including browser type and device details.</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h3>
+
+<i class="fas fa-cogs me-2"></i>
+
+How We Use Your Data
+
+</h3>
+
+<ul>
+
+<li>Deliver personalized Digital Twin predictions.</li>
+
+<li>Improve AI recommendations and platform performance.</li>
+
+<li>Protect your account against unauthorized access.</li>
+
+<li>Enhance user experience through analytics.</li>
+
+</ul>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6 mb-4">
+
+<div class="info-box">
+
+<i class="fas fa-lock"></i>
+
+<h5>
+
+Secure Storage
+
+</h5>
+
+<p>
+
+Your information is protected using modern security practices to minimize unauthorized access.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<div class="info-box">
+
+<i class="fas fa-user-check"></i>
+
+<h5>
+
+User Control
+
+</h5>
+
+<p>
+
+You can review, update, or request deletion of your personal information whenever applicable.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>
+
+<i class="fas fa-share-alt me-2"></i>
+
+Third-Party Services
+
+</h3>
+
+<p>
+
+Some AI-powered capabilities may integrate trusted third-party technologies to generate intelligent responses. Only the minimum information required to deliver these services is processed.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h3>
+
+<i class="fas fa-sync-alt me-2"></i>
+
+Policy Updates
+
+</h3>
+
+<p>
+
+This Privacy Policy may be revised periodically to reflect improvements, legal requirements, or new platform features. Updates become effective immediately after publication.
+
+</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>
+
+Questions About Your Privacy?
+
+</h3>
+
+<p>
+
+If you have any concerns regarding this Privacy Policy or your personal information, our team is here to help.
+
+</p>
+
+<a href="{{ url_for('contact') }}">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
